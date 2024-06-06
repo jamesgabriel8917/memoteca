@@ -7,10 +7,10 @@
   </header>
   <form class="container-form">
     <label for="pensamento">Pensamento</label>
-    <input type="textarea" class="input" id="pensamento" placeholder="Digite o pensamento">
+    <input type="textarea" class="input" id="pensamento" placeholder="Digite o pensamento" [value]="pensamento.conteudo">
 
     <label for="autoria">Autoria</label>
-    <input type="text" class="input" id="autoria" placeholder="Digite a autoria ou fonte">
+    <input type="text" class="input" id="autoria" placeholder="Digite a autoria ou fonte" [value]="pensamento.autoria">
 
     <label for="modelo">Selecione o modelo do card</label>
     <div class="container-radio">
@@ -25,8 +25,8 @@
         Previa:
         <div class="modelo modelo1 ff-roboto-mono">
           <img src="../../../assets/Imagens/modelo1.png" alt="">
-          <p class="conteudo">aqui vai conteúdo</p>
-          <p class="autoria"><b>aqui vai autoria</b></p>
+          <p class="conteudo">{{pensamento.conteudo}}</p>
+          <p class="autoria"><b>{{pensamento.autoria}}</b></p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -40,8 +40,8 @@
         Previa:
         <div class="modelo modelo2 ff-roboto-mono">
           <img src="../../../assets/Imagens/modelo2.png" alt="">
-          <p class="conteudo">aqui vai conteúdo</p>
-          <p class="autoria"><b>aqui vai autoria</b></p>
+          <p class="conteudo">{{pensamento.conteudo}}</p>
+          <p class="autoria"><b>{{pensamento.autoria}}</b></p>
         </div>
       </div>
       <div class="radio-modelo">
@@ -55,10 +55,14 @@
         Previa:
         <div class="modelo modelo3 ff-roboto-mono">
           <img src="../../../assets/Imagens/modelo3.png" alt="">
-          <p class="conteudo">aqui vai conteúdo</p>
-          <p class="autoria"><b>aqui vai autoria</b></p>
+          <p class="conteudo">{{pensamento.conteudo}}</p>
+          <p class="autoria"><b>{{pensamento.autoria}}</b></p>
         </div>
       </div>
+    </div>
+    <div class="acoes">
+      <button class="botao">Salvar</button>
+      <button class="botao">Cancelar</button>
     </div>
   </form>
 </section>
