@@ -12,6 +12,7 @@
     <label for="autoria">Autoria</label>
     <input type="text" class="input" id="autoria" placeholder="Digite a autoria ou fonte" [value]="pensamento.autoria">
 
+
     <label for="modelo">Selecione o modelo do card</label>
     <div class="container-radio">
       <div class="radio-modelo">
@@ -61,8 +62,8 @@
       </div>
     </div>
     <div class="acoes">
-      <button class="botao">Salvar</button>
-      <button class="botao">Cancelar</button>
+      <button (click)="criarPensamento()" class="botao">Salvar</button>
+      <button (click)="cancelar()" class="botao">Cancelar</button>
     </div>
   </form>
 </section>
