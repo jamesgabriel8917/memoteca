@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-pensamentos',
   templateUrl: './pensamentos.component.html',
@@ -9,7 +10,7 @@ export class PensamentosComponent implements OnInit {
 
   pensamento = {
     id: '1',
-    conteudo: 'aprendendo Angular',
+    conteudo: 'Aprendendo Angular',
     autoria: 'Dev',
     modelo:  ''
   }
@@ -20,7 +21,7 @@ export class PensamentosComponent implements OnInit {
   }
 
   criarPensamento(){
-
+    console.log('Pensamento criado:', this.pensamento);
   }
 
   cancelar(){
