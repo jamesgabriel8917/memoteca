@@ -148,7 +148,7 @@ input[type='radio']:checked+.custom-radio span {
 
 @media screen and (min-width: 800px){
   .container-form{
-    margin: 19%;
+    margin: 0 19%;
   }
 }
 
